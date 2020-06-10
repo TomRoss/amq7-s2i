@@ -219,7 +219,7 @@ under the License.
          <address name="demoTopic"/>
          <address name="testQueue">
          	<anycast>
-         		<queue name="testQueue">
+         		<queue name="testQueue"/>
          	</anycast>
          </address>
 
