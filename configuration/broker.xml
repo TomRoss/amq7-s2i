@@ -217,6 +217,11 @@ under the License.
             </anycast>
          </address>
          <address name="demoTopic"/>
+         <address name="testQueue">
+         	<anycast>
+         		<queue name="testQueue">
+         	</anycast>
+         </address>
 
       </addresses>
 
