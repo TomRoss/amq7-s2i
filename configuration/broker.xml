@@ -188,10 +188,10 @@ under the License.
             <max-size-bytes>-1</max-size-bytes>
             <message-counter-history-day-limit>10</message-counter-history-day-limit>
             <address-full-policy>PAGE</address-full-policy>
-            <auto-create-queues>true</auto-create-queues>
-            <auto-create-addresses>true</auto-create-addresses>
-            <auto-create-jms-queues>true</auto-create-jms-queues>
-            <auto-create-jms-topics>true</auto-create-jms-topics>
+            <auto-create-queues>false</auto-create-queues>
+            <auto-create-addresses>false</auto-create-addresses>
+            <auto-create-jms-queues>false</auto-create-jms-queues>
+            <auto-create-jms-topics>false</auto-create-jms-topics>
          </address-setting>
       </address-settings>
 
