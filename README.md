@@ -3,7 +3,7 @@
 You can build your own custom AMQ image on top of the official one with a s2i build.
 This way you can easily add your own configuration files or apply any patch.
 ```sh
-PROJECT_NAME="amq-s2i-broker"
+PROJECT_NAME="amq7-s2i-broker"
 IMAGE_STREAM="https://raw.githubusercontent.com/jboss-container-images/jboss-amq-7-broker-openshift-image/76-7.6.0.GA/amq-broker-7-image-streams.yaml"
 TEMPLATE="https://raw.githubusercontent.com/jboss-container-images/jboss-amq-7-broker-openshift-image/76-7.6.0.GA/templates/amq-broker-76-basic.yaml"
 

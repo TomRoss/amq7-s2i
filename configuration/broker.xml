@@ -206,17 +206,16 @@ under the License.
                <queue name="ExpiryQueue" />
             </anycast>
          </address>
-         <address name="demoQueue">
-            <anycast>
-               <queue name="demoQueue" />
-            </anycast>
-         </address>
          <address name="s2iQueue">
             <anycast>
                <queue name="s2iQueue" />
             </anycast>
          </address>
-         <address name="demoTopic"/>
+         <address name="testTopic">
+         	<multicast>
+         		<queue name="testTopic"/>
+         	</multicast>
+         </address>
          <address name="testQueue">
          	<anycast>
          		<queue name="testQueue"/>
