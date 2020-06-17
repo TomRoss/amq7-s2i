@@ -21,11 +21,11 @@ oc create secret docker-registry $REG_SECRET \
 
 # clone this repo and start a new build from source
 oc new-build registry.redhat.io/amq7/amq-broker:7.6~https://github.com/TomRoss/amq7-s2i.git
-oc set build-secret --pull bc/amq-s2i $REG_SECRET
-oc start-build amq-s2i
+oc set build-secret --pull bc/amq7-s2i $REG_SECRET
+oc start-build amq7-s2i
 
 # follow the build process (should end with: Push successful)
-oc logs -f bc/amq-s2i
+oc logs -f bc/amq7-s2i
 oc get is
 
 # create the service account
@@ -39,7 +39,7 @@ oc process -f /tmp/broker.yaml \
     -p AMQ_USER=admin \
     -p AMQ_PASSWORD=admin \
     -p IMAGE_STREAM_NAMESPACE=$PROJECT_NAME \
-    -p IMAGE=image-registry.openshift-image-registry.svc:5000/$PROJECT_NAME/amq-s2i \
+    -p IMAGE=image-registry.openshift-image-registry.svc:5000/$PROJECT_NAME/amq7-s2i \
     | oc create -f -
 ```
 
